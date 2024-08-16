@@ -155,9 +155,9 @@ nav ul li:hover .dropdown-content a:hover {
 .cart-item img {
     width: 100px;
     height: 100px;
-    object-fit: cover; /* Ensures image covers the entire area */
+    object-fit: cover; 
     border-radius: 5px;
-    margin-right: 10px; /* Space for label/link text */
+    margin-right: 10px; 
 }
 
 .cart-item h3 {
