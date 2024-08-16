@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
 
     // 1. Smooth Scrolling
     $('a').on('click', function(event) {
@@ -94,6 +95,9 @@ $(document).ready(function(){
         $('#cart-count').text(cartCount);
         alert('Item added to cart!');
     });
+  
+
+  
 
     // 8. Product Carousel
     var currentIndex = 0;
