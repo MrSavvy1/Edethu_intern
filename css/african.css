@@ -186,7 +186,7 @@ nav ul li:hover .dropdown-content a:hover {
     text-align: center;
     color: #ecf0f1;
     font-size: 14px;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
