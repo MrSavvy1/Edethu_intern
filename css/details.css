@@ -254,6 +254,15 @@ footer {
 
 /* Responsive Styles */
 @media (min-width: 769px) {
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
     .product-details {
         flex-direction: row;
     }
