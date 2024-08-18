@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    $('.hamburger').click(function() {
+        $('nav').toggleClass('active');
+    });
+
+
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     // Add item to cart

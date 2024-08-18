@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "name": "American Masquerade",
+      "category": "American",
+      "description": "An exquisite American masquerade mask that showcases traditional craftsmanship and cultural heritage.",
+      "price": 3000.00,
+      "image": "../images/images10.jpg"
+    },
+    {
+      "name": "African Idol",
+      "category": "African",
+      "description": "A powerful representation of African spirituality, this idol is a symbol of cultural reverence and artistic mastery.",
+      "price": 2500.00,
+      "image": "../images/afr1.jpg"
+    },
+    {
+      "name": "American Faces",
+      "category": "American",
+      "description": "A distinctive American hat adorned with symbols that tell the story of a rich cultural legacy.",
+      "price": 2200.00,
+      "image": "../images/images11.jpg"
+    },
+    {
+      "name": "African Jewel",
+      "category": "African",
+      "description": "An intricate African masquerade item that exemplifies the richness and diversity of African traditions.",
+      "price": 1800.00,
+      "image": "../images/images3.jpg"
+    },
+    {
+      "name": "Amazon Native",
+      "category": "American",
+      "description": "A finely crafted native artifact from the Amazon, representing the natural beauty and tradition of its people.",
+      "price": 2000.00,
+      "image": "../images/images12.jpg"
+    },
+    {
+      "name": "Stylized Sculpture",
+      "category": "Discounts",
+      "description": "A modern interpretation of traditional art, this stylized sculpture adds a unique touch to any collection.",
+      "price": 1500.00,
+      "image": "../images/images2.jpg"
+    },
+    {
+      "name": "Jewel Item",
+      "category": "Discounts",
+      "description": "A precious jewel item that shines with elegance and timeless beauty.",
+      "price": 1300.00,
+      "image": "../images/images10.jpg"
+    },
+    {
+      "name": "Calabash",
+      "category": "Discounts",
+      "description": "A  calabash that serves as both a functional object and a cultural artifact.",
+      "price": 1700.00,
+      "image": "../images/images.jpg"
+    },
+    {
+      "name": "Amazon Jar",
+      "category": "Popular",
+      "description": "A beautifully decorated jar from the Amazon, capturing the essence of nature and tradition.",
+      "price": 1900.00,
+      "image": "../images/images13.jpg"
+    },
+    {
+      "name": "Sacred Jar",
+      "category": "Popular",
+      "description": "A sacred jar that holds significant spiritual value, crafted with reverence and care.",
+      "price": 2100.00,
+      "image": "../images/images1.jpg"
+    },
+    {
+      "name": "Amazon Hat",
+      "category": "Popular",
+      "description": "An intricately designed Amazon hat that reflects the rich cultural heritage of the region.",
+      "price": 1600.00,
+      "image": "../images/images11.jpg"
+    },
+    {
+      "name": "Amazon Sculpture",
+      "category": "Popular",
+      "description": "A stunning Amazon sculpture that embodies the spirit of the rainforest.",
+      "price": 2400.00,
+      "image": "../images/images12.jpg"
+    },
+    {
+      "name": "Amazon Drum",
+      "category": "Picks",
+      "description": "A rhythmic Amazon drum that echoes the sounds of the jungle.",
+      "price": 1000.00,
+      "image": "../images/images13.jpg"
+    },
+    {
+      "name": "Sacred Item",
+      "category": "Picks",
+      "description": "A revered sacred item with deep spiritual significance, perfect for any collection.",
+      "price": 1200.00,
+      "image": "../images/images.jpg"
+    },
+    {
+      "name": "African Idol",
+      "category": "Picks",
+      "description": "An iconic African idol that stands as a testament to the continent's artistic legacy.",
+      "price": 900.00,
+      "image": "../images/afr1.jpg"
+    }
+  ]
+}

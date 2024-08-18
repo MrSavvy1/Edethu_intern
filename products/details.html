@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description - Artifact</title>
+    <link rel="stylesheet" href="../css/details.css">
+</head>
+<body>
+    <header>
+       <nav>
+         <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Products</a>
+                    <div class="dropdown-content">
+                        <a href="american.html">American Artifacts</a>
+                        <a href="african.html">African Artifacts</a>
+                    </div>
+                </li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-image">
+                <img id="product-image" src="" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h2 id="product-name">Product Name</h2>
+                <p class="price" id="product-price">$0.00</p>
+                <p class="description" id="product-description">Product description goes here.</p>
+                <div class="rating" id="product-rating">
+                    <span>★★★★★</span>
+                    <span>(0 based on 0 reviews)</span>
+                </div>
+                <button class="add-to-cart" data-name="" data-price="">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h3>Customer Reviews</h3>
+            <div id="reviews-list">
+                <p>No reviews yet.</p>
+            </div>
+
+            <h3>Write a Review</h3>
+           <form id="review-form">
+    <input type="text" id="review-user" placeholder="Your name" required />
+    <textarea id="review-comment" placeholder="Your review" required></textarea>
+    <select id="review-rating">
+        <option value="5">5 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="2">2 Stars</option>
+        <option value="1">1 Star</option>
+    </select>
+    <button type="submit">Submit Review</button>
+</form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Artifact. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/details.js"></script>
+  <script src="../js/products.js"></script>
+</body>
+</html>
