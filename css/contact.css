@@ -144,6 +144,15 @@ footer .social-icons a:hover {
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
+   nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
     section.contact h2 {
         font-size: 28px;
     }
