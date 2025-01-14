@@ -1,153 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Truck Service & Parts - Home</title>
-  <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skylink Trend Limited - Leading supplier of high-quality automotive parts, lubricants, tires, and filters. Join us to experience reliable supply solutions.">
+    <title>Skylink Trend Limited</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('images/afr1.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #e50914;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #f8f9fa;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        header .cta {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #e50914;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: fadeInDown 2s ease-in-out;
+        }
+
+        header .cta:hover {
+            background-color: #ff0a16;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 80px 50px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease;
+        }
+
+        section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #f1f1f1;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            color: #d6d6d6;
+        }
+
+        .content-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .content-card {
+            background-color: #1f1f1f;
+            padding: 20px;
+            width: 30%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.5s ease;
+        }
+
+        .content-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #e50914;
+        }
+
+        .content-card p {
+            color: #c7c7c7;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        #competitive {
+            background: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+        }
+
+        footer p {
+            color: #777;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .content-card {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header>
+
     <nav>
-      <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Services</a>
-          <div class="dropdown-content">
-            <a href="services/engine-oil.html">Engine Oil</a>
-            <a href="services/tyres.html">Tyres</a>
-            <a href="services/maintenance.html">Maintenance</a>
-          </div>
-        </li>
-        <li><a href="products/cart.html">Cart</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Top-Quality Truck Services & Parts</h1>
-    <p>Explore our range of engine oils, tyres, and maintenance services.</p>
-    <div class="search-bar">
-      <input type="text" placeholder="Search for services or parts...">
-      <button>Search</button>
-    </div>
-  </section>
+    <header id="home">
+        <h1>Welcome to Skylink Trend Limited</h1>
+        <p>Your trusted supplier for high-quality automotive parts, lubricants, and tires.</p>
+        <button class="cta">Get in Touch</button>
+    </header>
 
-  <section class="categories">
-    <h2>Our Services</h2>
-    <div class="category-list" id="service-list">
-      <a href="services/details.html?id=1">
-        <div class="category-item">
-          <img src="images/afr1.jpg" alt="Engine Oil">
-          Engine Oil
-          <p class="price">$50.00</p>
-          <a href="#" class="add-to-cart" data-name="Engine Oil" data-price="50.00">Add to Cart</a>
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>To deliver premium automotive parts and accessories, ensuring our customers experience enhanced vehicle performance and reliability.</p>
+    </section>
+
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p>To become the preferred global supplier in the automotive aftermarket, renowned for quality, value, and excellent customer service.</p>
+    </section>
+
+    <section id="competitive">
+        <h2>Competitive Advantages</h2>
+        <div class="content-cards">
+            <div class="content-card">
+                <h3>Fast Delivery</h3>
+                <p>We pride ourselves on rapid delivery times, minimizing vehicle downtime.</p>
+            </div>
+            <div class="content-card">
+                <h3>Excellent Customer Service</h3>
+                <p>From order processing to technical support, we ensure customer satisfaction.</p>
+            </div>
         </div>
-      </a>
-      <a href="services/details.html?id=2">
-        <div class="category-item">
-          <img src="images/afr2.jpg" alt="Tyres">
-          Tyres
-          <p class="price">$200.00</p>
-          <a href="#" class="add-to-cart" data-name="Tyres" data-price="200.00">Add to Cart</a>
-        </div>
-      </a>
-      <a href="services/details.html?id=3">
-        <div class="category-item">
-          <img src="images/afr4.jpg" alt="Maintenance">
-          Maintenance
-          <p class="price">$150.00</p>
-          <a href="#" class="add-to-cart" data-name="Maintenance" data-price="150.00">Add to Cart</a>
-        </div>
-      </a>
-      <a href="services/details.html?id=4">
-        <div class="category-item">
-          <img src="images/afr5.jpg" alt="Maintenance">
-          Maintenance
-          <p class="price">$150.00</p>
-          <a href="#" class="add-to-cart" data-name="Maintenance" data-price="150.00">Add to Cart</a>
-        </div>
-      </a>
-      <a href="services/details.html?id=5">
-        <div class="category-item">
-          <img src="images/afr7.jpg" alt="Tyres">
-          Tyres
-          <p class="price">$200.00</p>
-          <a href="#" class="add-to-cart" data-name="Tyres" data-price="200.00">Add to Cart</a>
-        </div>
-      </a>
-      
-    </div>
-  </section>
+    </section>
 
-  <section class="featured-sections">
-    <div class="section">
-      <h3>Exclusive Discounts</h3>
-      <div class="cards">
-        <a href="services/details.html?id=4">
-          <div class="card">
-            <img src="images/afr6.jpg" alt="Discounted Engine Oil">
-            Discounted Engine Oil
-            <p class="price">$40.00</p>
-            <a href="#" class="add-to-cart" data-name="Discounted Engine Oil" data-price="40.00">Add to Cart</a>
-          </div>
-        </a>
-        <a href="services/details.html?id=5">
-          <div class="card">
-            <img src="images/afr2.jpg" alt="Discounted Tyres">
-            Discounted Tyres
-            <p class="price">$180.00</p>
-            <a href="#" class="add-to-cart" data-name="Discounted Tyres" data-price="180.00">Add to Cart</a>
-          </div>
-        </a>
-      </div>
-    </div>
+    <footer id="contact">
+        <p>© 2025 Skylink Trend Limited. All Rights Reserved.</p>
+    </footer>
 
-    <div class="section">
-      <h3>Popular Products</h3>
-      <div class="cards">
-        <a href="services/details.html?id=6">
-          <div class="card">
-            <img src="images/afr4.jpg" alt="Popular Engine Oil">
-            Popular Engine Oil
-            <p class="price">$55.00</p>
-            <a href="#" class="add-to-cart" data-name="Popular Engine Oil" data-price="55.00">Add to Cart</a>
-          </div>
-        </a>
-        <a href="services/details.html?id=7">
-          <div class="card">
-            <img src="images/afr1.jpg" alt="Popular Tyres">
-            Popular Tyres
-            <p class="price">$220.00</p>
-            <a href="#" class="add-to-cart" data-name="Popular Tyres" data-price="220.00">Add to Cart</a>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <script>
+        // Scroll-triggered animation for sections
+        const sections = document.querySelectorAll('section');
+        const cards = document.querySelectorAll('.content-card');
 
-  <footer>
-    <p>&copy; 2024 Truck Service & Parts. All rights reserved @Edethu, Saviour</p>
-    <div class="social-icons">
-      <a href="http://linkedin.com/in/saviour-edethu-683a69257" target="_blank" class="icon linkedin">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://wa.me/+2349022154322" target="_blank" class="icon whatsapp">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-    </div>
-  </footer>
+        window.addEventListener('scroll', () => {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/products.js"></script>
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < window.innerHeight - 50) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Smooth scroll for "Get in Touch" button
+        document.querySelector('.cta').addEventListener('click', () => {
+            document.querySelector('#product').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
 </body>
-
 </html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truck Service & Parts - Home</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown-content">
+            <a href="services/engine-oil.html">Engine Oil</a>
+            <a href="services/tyres.html">Tyres</a>
+            <a href="services/maintenance.html">Maintenance</a>
+          </div>
+        </li>
+        <li><a href="products/cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Top-Quality Truck Services & Parts</h1>
+    <p>Explore our range of engine oils, tyres, and maintenance services.</p>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for services or parts...">
+      <button>Search</button>
+    </div>
+  </section>
+
+  <section class="categories">
+    <h2>Our Services</h2>
+    <div class="category-list" id="service-list">
+      <a href="services/details.html?id=1">
+        <div class="category-item">
+          <img src="images/afr1.jpg" alt="Engine Oil">
+          Engine Oil
+          <p class="price">$50.00</p>
+          <a href="#" class="add-to-cart" data-name="Engine Oil" data-price="50.00">Add to Cart</a>
+        </div>
+      </a>
+      <a href="services/details.html?id=2">
+        <div class="category-item">
+          <img src="images/afr2.jpg" alt="Tyres">
+          Tyres
+          <p class="price">$200.00</p>
+          <a href="#" class="add-to-cart" data-name="Tyres" data-price="200.00">Add to Cart</a>
+        </div>
+      </a>
+      <a href="services/details.html?id=3">
+        <div class="category-item">
+          <img src="images/afr4.jpg" alt="Maintenance">
+          Maintenance
+          <p class="price">$150.00</p>
+          <a href="#" class="add-to-cart" data-name="Maintenance" data-price="150.00">Add to Cart</a>
+        </div>
+      </a>
+      <a href="services/details.html?id=4">
+        <div class="category-item">
+          <img src="images/afr5.jpg" alt="Maintenance">
+          Maintenance
+          <p class="price">$150.00</p>
+          <a href="#" class="add-to-cart" data-name="Maintenance" data-price="150.00">Add to Cart</a>
+        </div>
+      </a>
+      <a href="services/details.html?id=5">
+        <div class="category-item">
+          <img src="images/afr7.jpg" alt="Tyres">
+          Tyres
+          <p class="price">$200.00</p>
+          <a href="#" class="add-to-cart" data-name="Tyres" data-price="200.00">Add to Cart</a>
+        </div>
+      </a>
+      
+    </div>
+  </section>
+
+  <section class="featured-sections">
+    <div class="section">
+      <h3>Exclusive Discounts</h3>
+      <div class="cards">
+        <a href="services/details.html?id=4">
+          <div class="card">
+            <img src="images/afr6.jpg" alt="Discounted Engine Oil">
+            Discounted Engine Oil
+            <p class="price">$40.00</p>
+            <a href="#" class="add-to-cart" data-name="Discounted Engine Oil" data-price="40.00">Add to Cart</a>
+          </div>
+        </a>
+        <a href="services/details.html?id=5">
+          <div class="card">
+            <img src="images/afr2.jpg" alt="Discounted Tyres">
+            Discounted Tyres
+            <p class="price">$180.00</p>
+            <a href="#" class="add-to-cart" data-name="Discounted Tyres" data-price="180.00">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Popular Products</h3>
+      <div class="cards">
+        <a href="services/details.html?id=6">
+          <div class="card">
+            <img src="images/afr4.jpg" alt="Popular Engine Oil">
+            Popular Engine Oil
+            <p class="price">$55.00</p>
+            <a href="#" class="add-to-cart" data-name="Popular Engine Oil" data-price="55.00">Add to Cart</a>
+          </div>
+        </a>
+        <a href="services/details.html?id=7">
+          <div class="card">
+            <img src="images/afr1.jpg" alt="Popular Tyres">
+            Popular Tyres
+            <p class="price">$220.00</p>
+            <a href="#" class="add-to-cart" data-name="Popular Tyres" data-price="220.00">Add to Cart</a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Truck Service & Parts. All rights reserved @Edethu, Saviour</p>
+    <div class="social-icons">
+      <a href="http://linkedin.com/in/saviour-edethu-683a69257" target="_blank" class="icon linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://wa.me/+2349022154322" target="_blank" class="icon whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/products.js"></script>
+</body>
+
+</html>
