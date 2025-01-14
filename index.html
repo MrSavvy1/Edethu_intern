@@ -75,7 +75,7 @@
             animation: fadeInDown 1.5s ease-in-out;
         }
 
-        header .cta {
+        header .cta, header .shop-now {
             padding: 15px 40px;
             font-size: 1.2rem;
             color: #fff;
@@ -85,9 +85,10 @@
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
             animation: fadeInDown 2s ease-in-out;
+            margin: 10px;
         }
 
-        header .cta:hover {
+        header .cta:hover, header .shop-now:hover {
             background-color: #ff0a16;
             transform: scale(1.1);
         }
@@ -145,8 +146,19 @@
             line-height: 1.6;
         }
 
+        #mission, #vision {
+            background-color: #121212;
+        }
+
         #competitive {
-            background: none;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('images/afr1.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #testimonies {
+            background-color: #1f1f1f;
         }
 
         footer {
@@ -195,7 +207,7 @@
     <header id="home">
         <h1>Welcome to Skylink Trend Limited</h1>
         <p>Your trusted supplier for high-quality automotive parts, lubricants, and tires.</p>
-        <button class="cta">Get in Touch</button>
+        <button class="shop-now" onclick="location.href='index2.html'">Shop Now</button>
     </header>
 
     <section id="mission">
@@ -218,6 +230,20 @@
             <div class="content-card">
                 <h3>Excellent Customer Service</h3>
                 <p>From order processing to technical support, we ensure customer satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonies">
+        <h2>Customer Testimonies</h2>
+        <div class="content-cards">
+            <div class="content-card">
+                <h3>John Doe</h3>
+                <p>"Skylink Trend Limited has the best automotive parts. My car's performance has improved significantly!"</p>
+            </div>
+            <div class="content-card">
+                <h3>Jane Smith</h3>
+                <p>"Excellent customer service and fast delivery. Highly recommend Skylink Trend Limited!"</p>
             </div>
         </div>
     </section>
